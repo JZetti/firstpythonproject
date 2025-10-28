@@ -73,7 +73,7 @@ print()
 user_points = input("Enter in total points in basketball game, max 10- separated by spaces ")
 points = [int(x) for x in user_points.split()]  # turn input into list of numbers
 sumOfPoints = sum(points)                       # add all points
-avgPPG = sumOfPoints / len(points)             # divide by how many games
+avgPPG = sumOfPoints / len(points)              # divide by how many games
 print("Total points:", sumOfPoints)
 print("Average PPG:", avgPPG)
 print()
@@ -83,11 +83,9 @@ dollarsTotal = 1000    # how much money i got
 dogFood = 200          # dog food cost
 grooming = 250         # grooming cost
 GPU = 1200            # gpu cost
-
 # see if gpu costs more than my money
 if GPU > dollarsTotal:
     print("Can I afford a gpu? ")
-
 # money left after dog stuff
     print(dollarsTotal- dogFood -grooming, " dollars. You are broke.")
 else:
@@ -99,10 +97,8 @@ user_adjective = input("Enter adjective here for madlib ")
 user_noun = input("noun it up ")
 past_verb = input("past tense verbage here <--- ")
 another_noun = input("we add words to programs every NOUN and again! ")
-
 # put their words in my sentence
 print("The quick", user_adjective, user_noun, past_verb, "over the lazy ", another_noun)
-
 # dodgeball quote but with user words
 noun1 = input("____ fill in the blank with a noun")
 verb = input("____  fill with a verb")
@@ -119,7 +115,6 @@ stolenJediAcolytes = .5     # jedi who were sithnapped
 # do some math to see who has more left
 totalJedi = 100 - jediValue + jediAcolytes / stolenJediAcolytes
 totalSith = 100 - sithValue + sithAcolytes + stolenJediAcolytes
-
 # see who wins
 if totalJedi > totalSith:
     print("The Jedi outnumber the Sith")
@@ -129,7 +124,6 @@ else:
 
 # age checker - tells you what you can do at different ages
 user_age = int(input("Enter your age: "))
-
 # check what age they are and say something
 if user_age == 0:
     print("you should rethink")
@@ -147,14 +141,11 @@ else:
 
 # rock paper scissors but with secret fire
 import random    # need this for random numbers
-
 print("Rock Paper Scissors Game!")
 print("1 = Rock, 2 = Paper, 3 = Scissors")
 user_choice = int(input("Choose 1, 2, or 3: "))
-
 # computer picks 1-4 but user doesnt know about 4
 computer_choice = random.randint(1, 4)
-
 # names for the numbers
 choices = {1: "Rock", 2: "Paper", 3: "Scissors", 4: "Fire"}
 print("You chose:", choices[user_choice])
