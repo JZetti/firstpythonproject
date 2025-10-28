@@ -124,7 +124,7 @@ user_age = int(input("Enter your age: "))
 
 # check what age they are and say something
 if user_age == 0:
-    print("you should of been aborted")
+    print("you should rethink")
 elif user_age == 16:
     print("you can drive")
 elif user_age == 18:
@@ -136,6 +136,7 @@ elif user_age == 55:
 else:
     print("Nothing special about age", user_age)
 print()
+
 # rock paper scissors but with secret fire
 import random    # need this for random numbers
 
