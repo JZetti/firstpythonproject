@@ -22,10 +22,12 @@ j = .15     # 15 percent tip
 i = .20     # 20 percent tip
 z = .25     # 25 percent tip
 total = 47.56   # the bill
+
 # multiply bill by each tip percent
 tip = total * x, total * j, total * i, total * z
 print("tip tiers are", tip)
 print()
+
 # basketball points from 5 games
 game1 = 13.0        # game 1 points
 game2 = 18.0        # game 2 points
@@ -46,6 +48,7 @@ age = input("AND AGE?! ")              # get age as text
 age = int(age)                         # turn age into number
 print(name, "next year you will be", age+1, "years old")  # add 1 year
 print()
+
 # get 6 numbers from user all at once
 user_values = input("give me your values gypsy, six of them- serparate by spaces ")
 # split the text by spaces and turn each one into a number
@@ -53,6 +56,7 @@ values = [int(x) for x in user_values.split()]
 totalSum = sum(values)                 # add them all up
 print(totalSum, "I added them, you're welcome.")
 print()
+
 # tip calculator where user types the percent
 user_tip = input("enter your tip percentage (like 15 for 15%): ")
 total = 47.56   # the bill amount
@@ -64,6 +68,7 @@ print("percent tipped:", tip_percentage * 100,"%")
 print("tip amount: ", total * tip_percentage )
 print("Total with tip:", total + tipAmount)
 print()
+
 # basketball points from user - they type multiple scores
 user_points = input("Enter in total points in basketball game, max 10- separated by spaces ")
 points = [int(x) for x in user_points.split()]  # turn input into list of numbers
@@ -87,7 +92,7 @@ if GPU > dollarsTotal:
     print(dollarsTotal- dogFood -grooming, " dollars. You are broke.")
 else:
     print("not possible ")
-print()
+    print()
 
 # madlib game - user gives me words
 user_adjective = input("Enter adjective here for madlib ")
@@ -120,7 +125,7 @@ if totalJedi > totalSith:
     print("The Jedi outnumber the Sith")
 else:
     print("The Sith outnumber the Jedi")
-
+    print()
 
 # age checker - tells you what you can do at different ages
 user_age = int(input("Enter your age: "))
@@ -138,7 +143,7 @@ elif user_age == 55:
     print("they can be old cheaper")
 else:
     print("Nothing special about age", user_age)
-print()
+    print()
 
 # rock paper scissors but with secret fire
 import random    # need this for random numbers
