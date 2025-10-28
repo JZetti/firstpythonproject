@@ -78,11 +78,13 @@ dollarsTotal = 1000    # how much money i got
 dogFood = 200          # dog food cost
 grooming = 250         # grooming cost
 GPU = 1200            # gpu cost
+
 # see if gpu costs more than my money
 if GPU > dollarsTotal:
     print("Can I afford a gpu? ")
-    # money left after dog stuff
-    print(dollarsTotal- dogFood -grooming, "You are broke dumb ass ")
+
+# money left after dog stuff
+    print(dollarsTotal- dogFood -grooming, " dollars. You are broke.")
 else:
     print("not possible ")
 print()
@@ -92,6 +94,7 @@ user_adjective = input("Enter adjective here for madlib ")
 user_noun = input("noun it up ")
 past_verb = input("past tense verbage here <--- ")
 another_noun = input("we add words to programs every NOUN and again! ")
+
 # put their words in my sentence
 print("The quick", user_adjective, user_noun, past_verb, "over the lazy ", another_noun)
 
